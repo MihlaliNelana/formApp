@@ -13,7 +13,14 @@ app.get('/process_get', function (req, res) {
       last_name:req.query.last_name,
       age:req.query.age,
       gender:req.query.gender,
-      file:req.query.file
+      file:req.query.file,
+      dept:req.query.dept,
+      hobbies:req.query.hobbies,
+      comm:req.query.comm
+      // sport:req.query.sport,
+      // trivia:req.query.trivia,
+      // fash:req.query.fash,
+      // other:req.query.other
    };
    console.log(response);
    res.end(JSON.stringify(response));
